@@ -1,0 +1,89 @@
+.carousel {
+	border-bottom: 5px solid @carousel-border;
+	background: @carousel-background;
+
+	&-photo {
+		float: left;
+		width: 377px;
+		height: 250px;
+
+		&__image {
+			display: block;
+			}
+		}
+
+	&__content {
+		padding: 20px 20px 0;
+		overflow: hidden;
+		}
+
+	&__link {
+		display: block;
+		position: relative;
+		height: 200px;
+		overflow: hidden;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 20px;
+			background: linear-gradient(to bottom, transparent, @carousel-background);
+			}
+		}
+
+	&__title {
+		font-size: 24px;
+		line-height: 1.3;
+		color: @carousel-title-color;
+		}
+
+	&__description {
+		margin-top: 16px;
+		font-size: 14px;
+		color: @carousel-description-color;
+		}
+
+	&-control-container {
+		text-align: right;
+		}
+
+	&__control {
+		display: inline-block;
+		vertical-align: middle;
+		width: 12px;
+		height: 24px;
+		border: 0;
+		background-color: transparent;
+		background-image: url(~'@{image-path}carousel-arrow-sprite.png');
+		background-repeat: no-repeat;
+		
+		&_prev {
+			background-position: 0 0;
+			}
+		
+		&_next {
+			background-position: -12px 0;
+			}
+		}
+
+	&-indicator {
+		display: inline-block;
+		margin: 0 10px;
+		vertical-align: middle;
+		font-size: 18px;
+		color: @carousel-indicator-color;
+
+		&__item {
+
+			&_total {
+
+				&::before {
+					content: "/";
+					}
+				}
+			}
+		}
+	}

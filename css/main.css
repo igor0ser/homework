@@ -1,0 +1,147 @@
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.g-clearfix::before,
+.g-clearfix::after {
+  content: "";
+  display: table;
+}
+.g-clearfix::after {
+  clear: both;
+}
+.l-wrapper {
+  width: 940px;
+  margin: auto;
+}
+.l-content {
+  margin: 50px 0;
+}
+.l-main {
+  float: left;
+  width: 620px;
+}
+.l-sidebar {
+  float: right;
+  width: 300px;
+  height: 500px;
+}
+.carousel {
+  border-bottom: 5px solid #c80000;
+  background: #f7f9fa;
+}
+.carousel-photo {
+  float: left;
+  width: 377px;
+  height: 250px;
+}
+.carousel-photo__image {
+  display: block;
+}
+.carousel__content {
+  padding: 20px 20px 0;
+  overflow: hidden;
+}
+.carousel__link {
+  display: block;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.carousel__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(to bottom, transparent, #f7f9fa);
+}
+.carousel__title {
+  font-size: 24px;
+  line-height: 1.3;
+  color: #c80000;
+}
+.carousel__description {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #333333;
+}
+.carousel-control-container {
+  text-align: right;
+}
+.carousel__control {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 24px;
+  border: 0;
+  background-color: transparent;
+  background-image: url(../i/carousel-arrow-sprite.png);
+  background-repeat: no-repeat;
+}
+.carousel__control_prev {
+  background-position: 0 0;
+}
+.carousel__control_next {
+  background-position: -12px 0;
+}
+.carousel-indicator {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #333333;
+}
+.carousel-indicator__item_total::before {
+  content: "/";
+}
+.hot-themes {
+  margin-bottom: 20px;
+  background: #d7d8d9;
+}
+.hot-themes__header {
+  display: table-cell;
+  padding: 4px;
+  background: #333333;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+.hot-themes-list {
+  padding: 0;
+  list-style: none;
+  display: table-cell;
+  vertical-align: top;
+}
+.hot-themes-list-item {
+  display: inline-block;
+  padding: 4px 8px;
+  vertical-align: top;
+}
+.hot-themes-list-item__title {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+}
+.main-news {
+  margin-top: 20px;
+}
+.main-news__header {
+  border-bottom: 2px solid #333;
+}
+.main-news__title {
+  display: inline-block;
+  position: relative;
+  bottom: -7px;
+  margin: 0;
+  padding-right: 10px;
+  background: #ffffff;
+  vertical-align: middle;
+  font-size: 24px;
+  color: #333;
+  font-weight: normal;
+}
